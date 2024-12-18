@@ -1,9 +1,10 @@
-export const HexString = () => {
-  for (let i = 0; i < 5; i++) {
-    let hex = "#" + Math.floor(Math.random() * 0xffffff).toString(16);
-    // hex += "#" ;
-    console.log(hex);
-  }
-};
+for (let i = 0; i < 5; i++) {
+  let hex = "#" + Math.floor(Math.random() * 0xffffff).toString(16);
 
-HexString();
+  let gen = generateHex(hex);
+  console.log(gen);
+}
+
+function generateHex<T>(hex: T): T {
+  return hex;
+}
